@@ -1,0 +1,25 @@
+public class EjemploArreglosOrdenPrincipioFinal {
+    public static void main(String[] args) {
+
+        int[] numeros = new int[10];
+        int[] a = new int[10];
+        int total = numeros.length;
+        for (int i = 0; i < total; i++) {
+            numeros[i] = i+1;
+        }
+
+        int aux = 0;
+        for (int i = 0; i < total -i; i++) { // puede ser dividio entre dos la condición o restar i
+            // System.out.print(numeros[i] + " - ");
+            // System.out.println(numeros[total -1 - i]);
+            a[aux++] = numeros[i];
+            a[aux++] = numeros[total - 1 - i];
+
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("a[i] = " + a[i]);
+        }
+
+    }
+}
